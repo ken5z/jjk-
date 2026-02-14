@@ -71,7 +71,25 @@
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
+    <div id="lock" style="
+    position:fixed;
+    inset:0;
+    background:black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+    font-family:monospace;
+">
+    <div>
+        <h2>Enter Access Code</h2>
+        <input id="pwd" type="password" style="padding:10px;font-size:16px">
+        <button onclick="unlock()" style="padding:10px">Enter</button>
+    </div>
+</div>
+
 
     <div id="grain"></div>
 
