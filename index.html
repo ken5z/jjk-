@@ -72,17 +72,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <div id="lock" style="
-    position:fixed;
-    inset:0;
-    background:black;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:9999;
-    font-family:monospace;
-">
+   <div id="lock">
+  <div id="lockBox">
+    <h2>Enter Access Code</h2>
+    <input id="pwd" type="password" placeholder="Password">
+    <button onclick="unlock()">Enter</button>
+  </div>
+</div>
+
     <div>
         <h2>Enter Access Code</h2>
         <input id="pwd" type="password" style="padding:10px;font-size:16px">
